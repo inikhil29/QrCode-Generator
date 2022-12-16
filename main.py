@@ -50,7 +50,7 @@ def getFileData(filepath):
                 return ""
 def getCoustomizedKeys(keys, total):
     key_mapping = {}
-    if input("Do you want to change the column name  OR Remove some unnecessary column if yes type 'yes' else enter any key : ") in ['yes', 'YES', 'Yes']:
+    if input("\nDo you want to change the column name  OR Remove some unnecessary column if yes type 'yes' else enter any key : ") in ['yes', 'YES', 'Yes']:
         for i in range(total):
             choice = input("Current Column Name : --{}-- \n1.For Name Changing enter 1\n2.For Remove the Column enter 0\n3.To Continue please enter\nEnter Your Choice  : ".format(keys[i]))
             if choice == '1':
@@ -105,7 +105,7 @@ if __name__ == "__main__":
                 newKeys = {}
                 # print(data)
                 # exit
-                print("Column Names are : ")
+                print("\n\nColumn Names are : ")
                 for i in range(total_keys):
                     print("{}.{}".format(i+1, keys[i]))
                 if input("\nDo You Want To Coustomize if Yes type 'y' else type any key : ") in ['y', 'Y']:
